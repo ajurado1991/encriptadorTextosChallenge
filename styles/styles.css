@@ -181,6 +181,13 @@ body {
     font-weight: 400;
 }
 
+.container-outputSection-statusMsg {
+    font-family: var(--font-monserrat);
+    font-size: .7rem;
+    font-weight: 400;
+    margin: 2% 0;
+}
+
 .container-outputSection-outputPresentation-subtitle{
     font-family: var(--font-monserrat);
     font-weight: 600;

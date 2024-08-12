@@ -14,6 +14,8 @@ function encryptButton(){
     message.value = encryptedText;
     textArea.value = "";
     message.style.backgroundImage = "none";
+    document.querySelector(".container-outputSection-statusMsg").textContent = "";
+
 }
 
 function encrypt(encryptedString){
@@ -33,6 +35,7 @@ function decryptButton(){
     const encryptedText = decrypt(textArea.value);
     message.value = encryptedText;
     textArea.value = "";
+    document.querySelector(".container-outputSection-statusMsg").textContent = "";
 }
 
 
@@ -49,15 +52,16 @@ function decrypt(decryptedString){
     return decryptedString; 
 }
 
-document.getElementsByClassName("container-outputSection-copyButton").addEventListener("click", function(){
-    const copiedText = document.getElementsByClassName("container-outputSection-outputPresentation").value;
 
-    navigator.clipboard.writeText(copiedText).then(() => {
-        document.getElementsByClassName("container-outputSection-statusMsg").textContent = "Texto copiado al portapapeles";
+document.querySelector(".container-outputSection-copyButton").addEventListener("click", function() {
+    const textToCopy = document.querySelector(".container-outputSection-outputPresentation").value;
+
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        document.querySelector(".container-outputSection-statusMsg").textContent = "¡Texto copiado al portapapeles!";
     }).catch(err => {
-        document.getElementsByClassName("container-outputSection-statusMsg").textContent = "Error al copiar el texto";
+        document.querySelector(".container-outputSection-statusMsg").textContent = "Error al copiar el texto.";
         console.error("Error al copiar el texto: ", err);
-    })
+    });
 });
 
 
