@@ -49,4 +49,15 @@ function decrypt(decryptedString){
     return decryptedString; 
 }
 
+document.getElementsByClassName("container-outputSection-copyButton").addEventListener("click", function(){
+    const copiedText = document.getElementsByClassName("container-outputSection-outputPresentation").value;
+
+    navigator.clipboard.writeText(copiedText).then(() => {
+        document.getElementsByClassName("container-outputSection-statusMsg").textContent = "Texto copiado al portapapeles";
+    }).catch(err => {
+        document.getElementsByClassName("container-outputSection-statusMsg").textContent = "Error al copiar el texto";
+        console.error("Error al copiar el texto: ", err);
+    })
+});
+
 

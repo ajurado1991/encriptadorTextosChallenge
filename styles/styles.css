@@ -137,6 +137,7 @@ body {
     width: 40%;
 }
 
+
 .container-inputSection-buttonArea-decryptButton:hover{
     border: none;
     border-radius: 16px;
@@ -144,6 +145,8 @@ body {
     background-color: var(--secondary-color-container-on);
     color: var(--secondary-color-on);
 }
+
+
 
 .container-outputSection {
     box-sizing: border-box;
@@ -205,6 +208,7 @@ body {
     color: var(--tertiary-color);
     width: 40%;
 }
+
 
 .container-outputSection-copyButton:hover {
     border: none;
@@ -326,6 +330,25 @@ body {
         width: 30vh;
     }
 
+    .container-inputSection-buttonArea-encryptButton:hover{
+        border: 1px solid var(--primary-color);
+        border-radius: 16px;
+        padding: 6px 16px;
+        background-color: var(--secondary-color-container);
+        color: var(--secondary-color);
+        width: 30vh;
+    }
+
+    .container-inputSection-buttonArea-decryptButton:hover{
+        border: 1px solid var(--primary-color);
+        border-radius: 16px;
+        padding: 6px 16px;
+        background-color: var(--secondary-color-container);
+        color: var(--secondary-color);
+        width: 30vh;
+    }
+
+
     .container-inputSection-buttonArea-encryptButton:active{
         border: none;
         border-radius: 16px;
@@ -342,6 +365,7 @@ body {
         color: var(--secondary-color-on);
     }
 
+
     .container-outputSection-copyButton {
         margin: 20px 0 0 0 ;
         border: 1px solid var(--tertiary-color);
@@ -351,7 +375,18 @@ body {
         color: var(--tertiary-color);
         width: 30vh;
     }
+
+    .container-outputSection-copyButton:hover {
+        margin: 20px 0 0 0 ;
+        border: 1px solid var(--tertiary-color);
+        border-radius: 16px;
+        padding: 6px 16px;
+        background-color: var(--tertiary-color-container);
+        color: var(--tertiary-color);
+        width: 30vh;
+    }
     
+
     .container-outputSection-copyButton:active {
         border: none;
         border-radius: 16px;
@@ -359,6 +394,7 @@ body {
         background-color: var(--tertiary-color-container-on);
         color: var(--tertiary-color-on);
     }
+
 
 
 
