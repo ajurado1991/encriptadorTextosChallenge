@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header">
+        <p class="header-text">| Challenge 1 |</p>
+        <h1 class="header-title">Encriptador de textos</h1>
+    </header>
+
+
+    <main class="container">
+        <section class="container-inputSection">
+            <input type="text" placeholder="Ingrese el texto aquí" class="container-inputSection-textArea">
+            <p class="container-inputSection-text"><img src="/assets/exclamation-circle-fill.svg" alt="icono de exclamación en un recuadro"> Sólo letras minúsculas y sin acentos.</p>
+            <div class="container-inputSection-buttonArea">
+                <input type="button" value="Encriptar" class="container-inputSection-buttonArea-encryptButton" onclick="encryptButton()"> 
+                <input type="button" value="Desencriptar" class="container-inputSection-buttonArea-decryptButton" onclick="decryptButton()">
+            </div>
+        </section>
+
+        <div class="container-div"></div>
+
+        <!--
+                <section class="container-outputSection">
+            <div class="container-outputSection-outputPresentation">
+                <img src="/assets/notfound_illustration.png" alt="imagen de error de no haber encontrado un resultado" class="container-outputSection-outputPresentation-illustration">
+                <h3 class="container-outputSection-outputPresentation-subtitle">Ningún mensaje fue encontrado</h3>
+                <p class="container-outputSection-outputPresentation-text">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <input type="button" value="Copiar" class="container-outputSection-copyButton">
+        </section>
+        -->
+        
+        <section class="container-outputSection">
+            <input type="text" name="" id="" class="container-outputSection-outputPresentation">
+            <input type="button" value="Copiar" class="container-outputSection-copyButton">
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <section class="footer-credits">
+            <p>2024. Todos los derechos resevados | Hecho por: <strong>Alain Jurado</strong></p>
+        </section>
+
+        <section class="footer-rrss">
+            <a href="https://github.com/ajurado1991" class="footer-rrss-icons" target="_blank"><img src="/assets/github.svg" alt="Logo de github"></a>
+            <a href="https://www.instagram.com/alain_jurado_1991/" class="footer-rrss-icons" target="_blank"><img src="/assets/instagram.svg" alt="Logo de instagram"></a>
+            <a href="https://www.linkedin.com/in/ealainjurado/" class="footer-rrss-icons" target="_blank"><img src="/assets/linkedin.svg" alt="Logo de linkedin"></a>
+            <a href="https://www.behance.net/alainjurado" class="footer-rrss-icons" target="_blank"><img src="/assets/behance.svg" alt="Logo de Behance"></a>
+            <a href="https://wa.me/+525586788574" class="footer-rrss-icons" target="_blank"><img src="/assets/whatsapp.svg" alt="Logo de Whatsapp"></a>
+        </section>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+</html>
