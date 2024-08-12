@@ -314,7 +314,7 @@ body {
         padding: 6px 16px;
         background-color: var(--secondary-color-container);
         color: var(--secondary-color);
-        width: 50vh;
+        width: 30vh;
     }
 
     .container-inputSection-buttonArea-decryptButton{
@@ -323,7 +323,7 @@ body {
         padding: 6px 16px;
         background-color: var(--secondary-color-container);
         color: var(--secondary-color);
-        width: 50vh;
+        width: 30vh;
     }
 
     .container-inputSection-buttonArea-encryptButton:active{
@@ -349,7 +349,7 @@ body {
         padding: 6px 16px;
         background-color: var(--tertiary-color-container);
         color: var(--tertiary-color);
-        width: 50vh;
+        width: 30vh;
     }
     
     .container-outputSection-copyButton:active {
